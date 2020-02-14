@@ -1,2 +1,2 @@
 # eventor
-# eventor-plugin
+A basic, lightweight WordPress events plugin.
