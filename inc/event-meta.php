@@ -58,11 +58,11 @@ add_filter( 'template_include', 'eventor_templates' );
 function eventor_templates( $template ) {
   $post_types = array( 'eventor' );
 
-  if ( is_post_type_archive( $post_types ) && file_exists( plugin_dir_path(__FILE__) . 'templates/event-archive.php' ) ){
+  if ( is_post_type_archive( $post_types ) && file_exists( plugin_dir_path(__FILE__) . '/templates/event-archive.php' ) ){
       $template = plugin_dir_path(__FILE__) . 'templates/event-archive.php';
   }
 
-  if ( is_singular( $post_types ) && file_exists( plugin_dir_path(__FILE__) . 'templates/event-single.php' ) ){
+  if ( is_singular( $post_types ) && file_exists( plugin_dir_path(__FILE__) . '/templates/event-single.php' ) ){
       $template = plugin_dir_path(__FILE__) . 'templates/event-single.php';
   }
 

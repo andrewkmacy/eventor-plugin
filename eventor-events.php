@@ -76,4 +76,3 @@ class Event {
 }
 
 $Event = new Event();
-
