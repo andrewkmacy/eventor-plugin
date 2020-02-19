@@ -1,4 +1,5 @@
 <?php
+
 function events_add_meta_boxes() {
 
 add_meta_box( 
@@ -20,7 +21,7 @@ add_action( 'add_meta_boxes_eventor', 'events_add_meta_boxes' );
 
 function eventor_details_set() {
 global $post;
-include plugin_dir_path( __FILE__ ) . './event-form.php';
+include plugin_dir_path( __FILE__ ) . 'event-form.php';
 wp_nonce_field( basename( __FILE__ ), 'eventor_details_set' );
 
 $date = get_post_meta( $post->ID, 'Event Details', true );
@@ -58,12 +59,12 @@ add_filter( 'template_include', 'eventor_templates' );
 function eventor_templates( $template ) {
   $post_types = array( 'eventor' );
 
-  if ( is_post_type_archive( $post_types ) && file_exists( plugin_dir_path(__FILE__) . '/templates/event-archive.php' ) ){
-      $template = plugin_dir_path(__FILE__) . 'templates/event-archive.php';
+  if ( is_post_type_archive( $post_types ) && file_exists( plugin_dir_path(__FILE__) . '../templates/event-archive.php' ) ){
+      $template = plugin_dir_path(__FILE__) . '../templates/event-archive.php';
   }
 
-  if ( is_singular( $post_types ) && file_exists( plugin_dir_path(__FILE__) . '/templates/event-single.php' ) ){
-      $template = plugin_dir_path(__FILE__) . 'templates/event-single.php';
+  if ( is_singular( $post_types ) && file_exists( plugin_dir_path(__FILE__) . '../templates/event-single.php' ) ){
+      $template = plugin_dir_path(__FILE__) . '../templates/event-single.php';
   }
 
   return $template;

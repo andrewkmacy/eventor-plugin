@@ -1,13 +1,5 @@
 <?php
 
-/*
-Plugin Name: Eventor
-Description: WordPress Custom Events Plugin
-Version:     1.00
-Author:      Drew Macy
-Author URI:  https://andrewkmacy.com
-*/
-
 // Exit if accessed directly
 if (!defined('ABSPATH'))
   exit;
@@ -15,7 +7,7 @@ if (!defined('ABSPATH'))
 class Event {
 
 	public function __construct (){
-		include plugin_dir_path( __FILE__ ) . './inc/event-meta.php';
+		include plugin_dir_path( __FILE__ ) . 'event-meta.php';
 		add_action('init', array($this, 'register'));
 	}
 	// Register Custom Post Type
