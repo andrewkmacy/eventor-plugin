@@ -20,9 +20,9 @@ class Event {
     private $name               = 'Events';
     private $singular_name      = 'Event';
 
-    function __construct() {
+    public function __construct() {
         add_action('init', array($this, 'register'));
-        add_action('add_meta_boxes_eventor', array($this, 'events_add_meta_boxes'));
+        add_action('add_meta_boxes_eventor', array($this, 'eventor_add_meta_boxes'));
         add_action('save_post', array($this, 'eventor_save_meta_box'));
         add_filter( 'template_include', array($this, 'eventor_templates'));
     }
@@ -148,4 +148,4 @@ class Event {
     }
 }
 
-new Event();
+$Event = new Event();
