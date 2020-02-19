@@ -20,6 +20,13 @@ class Event {
     private $name               = 'Events';
     private $singular_name      = 'Event';
 
+    function __construct() {
+        add_action('init', array($this, 'register'));
+        add_action('add_meta_boxes_eventor', array($this, 'events_add_meta_boxes'));
+        add_action('save_post', array($this, 'eventor_save_meta_box'));
+        add_filter( 'template_include', array($this, 'eventor_templates'));
+    }
+
     /**
      * Register post type
      */
@@ -138,15 +145,6 @@ class Event {
         }
 
         return $template;
-    }
-
-    function __construct() {
-        add_action('init', array($this, 'register'));
-        add_action('add_meta_boxes_eventor', array($this, 'events_add_meta_boxes'));
-        //add_action('init', array($this, 'eventor_details_set'));
-        add_action('save_post', array($this, 'eventor_save_meta_box'));
-        //add_action('init', array($this, 'eventor_templates'));
-        add_filter( 'template_include', array($this, 'eventor_templates'));
     }
 }
 
