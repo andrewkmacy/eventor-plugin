@@ -61,7 +61,7 @@ class Speaker {
 			'capability_type'       => 'page',
 		);
 	
-	register_post_type( 'speaker', $args );
+	register_post_type( 'speakers', $args );
 
 	}
 }
