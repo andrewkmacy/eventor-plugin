@@ -10,7 +10,9 @@ get_header(); ?>
 		
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
-            <h1><?php the_title(); ?></h1>
+			<h1><?php the_title(); ?></h1>
+			
+			<?php the_content(); ?>
             <!-- show event info -->
                 <ul>
                     <li><strong>Date: </strong><?php echo esc_attr( get_post_meta( get_the_ID(), 'eventor_date_set', true ) ); ?></li>
@@ -18,7 +20,7 @@ get_header(); ?>
                     <li><strong>Location: </strong><?php echo esc_attr( get_post_meta( get_the_ID(), 'eventor_location_set', true ) ); ?></li>
                 </ul>
 			
-			<?php the_content(); ?>
+			
 									
 			<nav class="post-navigation">
 				<div class="nav-previous"><?php previous_post_link( '&laquo; %link' ); ?></div>
@@ -29,12 +31,14 @@ get_header(); ?>
 
 	  <?php comments_template(); ?>
 	
-	  <?php endwhile; endif; ?>
+		<?php endwhile; endif; ?>
 	
 	</section>
-	
-<?php get_sidebar(); ?>
 
 </div><!-- end of main div -->
 
-<?php get_footer(); ?>
+<?php get_sidebar(); ?>
+
+<?php get_footer(); ?>	
+
+

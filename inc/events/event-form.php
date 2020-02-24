@@ -16,6 +16,7 @@
             id="eventor_date_set" 
             type="date" 
             name="eventor_date_set"
+            style="width: 100%;"
             value="<?php echo esc_attr( get_post_meta( get_the_ID(), 'eventor_date_set', true ) ); ?>">
     </p>
     <p class="meta-options eventor_time">
@@ -24,6 +25,7 @@
             id="eventor_time_set" 
             type="time" 
             name="eventor_time_set"
+            style="width: 100%;"
             value="<?php echo esc_attr( get_post_meta( get_the_ID(), 'eventor_time_set', true ) ); ?>">
     </p>
     <p class="meta-options eventor_location">
@@ -32,6 +34,7 @@
             id="eventor_location_set" 
             type="text" 
             name="eventor_location_set"
+            style="width: 100%;"
             value="<?php echo esc_attr( get_post_meta( get_the_ID(), 'eventor_location_set', true ) ); ?>">
     </p>
 </div>

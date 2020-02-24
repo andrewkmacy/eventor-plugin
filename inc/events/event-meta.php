@@ -1,6 +1,6 @@
 <?php
 
-class Meta {
+class EventMetaBox {
 
     public function __construct()
     {
@@ -24,7 +24,6 @@ class Meta {
         'null'
         );
     }
-
 
     /**
     * Output the HTML for the metabox.
@@ -79,4 +78,4 @@ class Meta {
     }
 }
 
-$Meta = new Meta();
+$Meta = new EventMetaBox();
