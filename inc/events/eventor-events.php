@@ -4,7 +4,7 @@
 if (!defined('ABSPATH'))
   exit;
 
-class Event {
+class EventorEvent {
 
 	public function __construct (){
 		include plugin_dir_path( __FILE__ ) . 'event-meta.php';
@@ -61,10 +61,11 @@ class Event {
 			'exclude_from_search'   => false,
 			'publicly_queryable'    => true,
 			'capability_type'       => 'page',
+			'menu_icon'   			=> 'dashicons-calendar',
 		);
 	
 		register_post_type( 'eventor', $args );
 	}
 }
 
-$Event = new Event();
+$EventorEvent = new EventorEvent();

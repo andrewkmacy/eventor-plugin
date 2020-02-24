@@ -59,6 +59,7 @@ class Speaker {
 			'exclude_from_search'   => false,
 			'publicly_queryable'    => true,
 			'capability_type'       => 'page',
+			'menu_icon'   			=> 'dashicons-businessman',
 		);
 	
 	register_post_type( 'speakers', $args );
