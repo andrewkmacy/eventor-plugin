@@ -37,13 +37,3 @@ define( 'EVENTOR', '1.0.0' );
  */
 require_once plugin_dir_path( __FILE__ ) . './inc/events/eventor-events.php';
 require_once plugin_dir_path( __FILE__ ) . './inc/speakers/eventor-speakers.php';
-
-/**
- * Begins execution of the plugin.
- *
- * Since everything within the plugin is registered via hooks,
- * then kicking off the plugin from this point in the file does
- * not affect the page life cycle.
- *
- * @since    1.0.0
- */
