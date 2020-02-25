@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'EVENTOR', '1.0.0' );
+define( 'EVENTOR_VERSION', '1.0.0' );
 
 /**
  * The core plugin classes that are used to define internationalization,
@@ -37,3 +37,9 @@ define( 'EVENTOR', '1.0.0' );
  */
 require_once plugin_dir_path( __FILE__ ) . './inc/events/eventor-events.php';
 require_once plugin_dir_path( __FILE__ ) . './inc/speakers/eventor-speakers.php';
+
+function enventor_enqueue_styles() {
+	wp_enqueue_style( 'eventor-css', plugins_url( 'style.css', __FILE__ ) );
+}
+
+add_action( 'wp_enqueue_scripts', 'enventor_enqueue_styles' );
