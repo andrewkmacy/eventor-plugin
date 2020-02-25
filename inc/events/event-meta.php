@@ -5,7 +5,7 @@ class EventMetaBox {
     public function __construct()
     {
         add_action( 'add_meta_boxes_eventor', array( $this, 'events_add_meta_boxes' ));
-        add_action( 'save_meta_box', array( $this, 'eventor_save_meta_box' ));
+        add_action( 'save_post', array( $this, 'eventor_save_meta_box' ));
         add_filter( 'template_include', array( $this, 'eventor_templates' ));
     }
 
