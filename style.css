@@ -21,10 +21,6 @@
     color: inherit;
 }
 
-.post-navigation {
-    color: inherit;
-}
-
 .event_content article {
     display: inline-block;
     padding: 10px;
@@ -50,33 +46,28 @@
 
 /* Eventor event-archive template style */
 
-.archive_event_main {
-    display: inline-block;
-    width: 90%;
+.archive_content {
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.archive_content_wrapper {
-    border-bottom: 1px solid;
-}
-
-.archive_event_content ul {
+.archive_content ul {
     padding: 10px;
 }
 
-.archive_event_content li {
+.archive_content li {
     line-height: 1.2em;
     color: inherit;
 }
 
-.archive_event_content article {
+.archive_content article {
     display: inline-block;
     padding: 25px 10px 25px 10px;
-    width: 70%;
+    width: 60%;
 }
 
-.archive_event_content article h1 {
+.archive_content article h1 {
     margin-top: 0px;
     color: inherit;
 }
@@ -89,4 +80,10 @@
 .archive_event_image img {
     max-width: 250px;
     max-height: 250px;
+}
+
+.post-navigation {
+    color: inherit;
+    border-bottom: 1px solid;
+    padding-bottom: 60px;
 }
