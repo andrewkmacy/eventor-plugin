@@ -5,7 +5,7 @@
     border-bottom: 1px solid;
 }
 
-.event_content {
+.event_wrapper {
     float: left;
     width: 65%;
     clear: left;
