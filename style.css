@@ -1,10 +1,5 @@
 /* Eventor event-single template style */
 
-.event_main {
-    width: 65%;
-    clear: left;
-}
-
 .event_post {
     padding: 10px 10px 25px 10px;
     border-bottom: 1px solid;
@@ -12,6 +7,8 @@
 
 .event_content {
     float: left;
+    width: 65%;
+    clear: left;
 }
 
 .event_content ul {
