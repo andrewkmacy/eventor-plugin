@@ -1,7 +1,13 @@
-/* Eventor Main Style */
+/* Eventor event-single template style */
 
 .event_main {
     width: 65%;
+    clear: left;
+}
+
+.event_post {
+    padding: 10px 10px 25px 10px;
+    border-bottom: 1px solid;
 }
 
 .event_content {
@@ -38,6 +44,51 @@
 }
 
 .event_image img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+
+
+/* Eventor event-archive template style */
+
+.archive_event_main {
+    display: inline-block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.single_event {
+    border-bottom: 1px solid;
+}
+
+.archive_event_content ul {
+    padding: 10px;
+}
+
+.archive_event_content li {
+    line-height: 1.2em;
+    color: inherit;
+}
+
+.archive_event_content article {
+    display: inline-block;
+    padding: 25px 10px 25px 10px;
+    width: 70%;
+}
+
+.archive_event_content article h1 {
+    margin-top: 0px;
+    color: inherit;
+}
+
+.archive_event_image {
+    float: right;
+    padding: 25px;
+}
+
+.archive_event_image img {
     max-width: 250px;
     max-height: 250px;
 }
