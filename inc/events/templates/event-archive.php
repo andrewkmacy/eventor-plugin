@@ -4,7 +4,7 @@ Template Name: Archives
 */
 get_header(); ?>
     <header class="page-header" role="banner">
-    <h1><?php wp_title(); ?></h1>
+      <h1><?php wp_title(); ?></h1>
     </header><!-- .page-header -->
 
     <div class="archive_event_main">
@@ -13,7 +13,7 @@ get_header(); ?>
         
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-          <div class="single_event">
+          <div class="archive_content_wrapper">
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
               
