@@ -38,6 +38,9 @@ define( 'EVENTOR_VERSION', '1.0.0' );
 require_once plugin_dir_path( __FILE__ ) . './inc/events/eventor-events.php';
 require_once plugin_dir_path( __FILE__ ) . './inc/speakers/eventor-speakers.php';
 
+/**
+ * Enqueue Plugin Stylesheet
+ */
 function enventor_enqueue_styles() {
 	wp_enqueue_style( 'eventor-css', plugins_url( 'style.css', __FILE__ ) );
 }
