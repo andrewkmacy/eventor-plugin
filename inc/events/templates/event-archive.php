@@ -4,10 +4,7 @@ Template Name: Archives
 */
 get_header(); ?>
     <header class="page-header" role="banner">
-		<?php
-		  the_archive_title( '<h1 class="page-title">', '</h1>' );
-		  the_archive_description( '<div class="archive-description">', '</div>' );
-		?>
+    <h1><?php wp_title(); ?></h1>
     </header><!-- .page-header -->
 
     <div class="archive_event_main">
