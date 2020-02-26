@@ -62,6 +62,7 @@ class EventorEvent {
 			'publicly_queryable'    => true,
 			'capability_type'       => 'page',
 			'menu_icon'   			=> 'dashicons-calendar',
+			'rewrite'            	=> array( 'slug' => 'events' ),
 		);
 	
 		register_post_type( 'eventor', $args );
