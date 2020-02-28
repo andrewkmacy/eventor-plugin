@@ -1,6 +1,6 @@
-/////////////////////////////////////////////////
-/* Eventor event-single template style */
-/////////////////////////////////////////////////
+/*
+/ Eventor event-single template style 
+*/
 
 .event_post {
     padding: 10px 10px 25px 10px;
@@ -44,9 +44,9 @@
     max-height: 250px;
 }
 
-/////////////////////////////////////////////////
-/* Eventor event-archive template style */
-/////////////////////////////////////////////////
+/*
+/ Eventor event-archive template style 
+*/
 
 .archive_content {
     padding: 20px;
@@ -90,9 +90,9 @@
     padding-bottom: 60px;
 }
 
-/////////////////////////////////////////////////
-/* Eventor speaker-single template style */
-/////////////////////////////////////////////////
+/* 
+/ Eventor speaker-single template style 
+*/
 
 .speaker_post {
     padding: 10px 10px 25px 10px;
@@ -137,9 +137,9 @@
     max-height: 250px;
 }
 
-/////////////////////////////////////////////////
-/* Eventor speaker-archive template style */
-/////////////////////////////////////////////////
+/* 
+/ Eventor speaker-archive template style 
+*/
 
 .speaker_archive_main {
     width: 100%;
