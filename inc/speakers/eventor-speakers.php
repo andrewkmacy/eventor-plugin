@@ -8,6 +8,7 @@ class EventorSpeaker {
 
 	public function __construct (){
 		add_action('init', array($this, 'eventor_speaker'));
+		add_filter( 'template_include', array( $this, 'speaker_templates' ));
 	}
 	// Register Custom Post Type
 	public function eventor_speaker() {
@@ -65,6 +66,21 @@ class EventorSpeaker {
 	register_post_type( 'speakers', $args );
 
 	}
+
+	function speaker_templates( $template ) {
+        $post_types = array( 'speakers' );
+
+        if ( is_post_type_archive( $post_types ) && file_exists( plugin_dir_path(__FILE__) . '/templates/speaker-archive.php' ) ){
+            $template = plugin_dir_path(__FILE__) . '/templates/speaker-archive.php';
+        }
+
+        if ( is_singular( $post_types ) && file_exists( plugin_dir_path(__FILE__) . '/templates/speaker-single.php' ) ){
+            $template = plugin_dir_path(__FILE__) . '/templates/speaker-single.php';
+        }
+
+        return $template;
+    }
+
 }
 
 $EventorSpeaker = new EventorSpeaker();
