@@ -35,7 +35,7 @@ get_header(); ?>
           </nav>
 
   <?php endwhile; endif; ?>	
-  
+
 </div>
 
 <?php get_footer(); ?>

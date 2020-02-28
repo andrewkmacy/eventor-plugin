@@ -4,7 +4,7 @@
 if (!defined('ABSPATH'))
   exit;
 
-class Speaker {
+class EventorSpeaker {
 
 	public function __construct (){
 		add_action('init', array($this, 'eventor_speaker'));
@@ -67,4 +67,4 @@ class Speaker {
 	}
 }
 
-$Speaker = new Speaker();
+$EventorSpeaker = new EventorSpeaker();
